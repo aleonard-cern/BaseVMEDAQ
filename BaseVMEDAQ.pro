@@ -10,6 +10,17 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = BaseVMEDAQ
 DESTDIR = bin
+targetinstall.path = /usr/local/bin/BaseVMEDAQ
+targetinstall.files = bin/BaseVMEDAQ
+
+INSTALLS += targetinstall
+
+icon.path = /usr/local/BaseVMEDAQ
+icon.files = data/iconBaseVMEDAQ.png
+icon.extra = cp data/BaseVMEDAQ.desktop ~/Desktop/BaseVMEDAQ.desktop
+
+INSTALLS += icon
+
 TEMPLATE = app
 
 
